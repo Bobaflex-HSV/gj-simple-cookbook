@@ -1,0 +1,26 @@
+.App {
+  font-family: sans-serif;
+}
+
+.recipe-wrapper {
+  margin: auto;
+  margin-top: 20px;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: left;
+}
+.recipe-image {
+}
+
+.cb-badge {
+  margin-right: 20px;
+}
+.cb-nested-badge {
+  margin-left: 10px;
+}
+
+.cb-container {
+  display: flex;
+  justify-content: left;
+}
