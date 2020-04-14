@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Recipe from "./Recipe";
+import Routers from "./Routers";
+
 import "./styles.css";
 
 export default function RecipeList() {
@@ -44,12 +46,14 @@ export default function RecipeList() {
           className="btn btn-info cb-button fetch-button"
           onClick={fetchRecipes}
         >
-          Fetch Recipes
+          Fetch Recipe
         </button>
         <br />
         {recipeExists ? (
           <div>
             <RecipeComponents />
+            <Routers />
+
           </div>
         ) : (
           <div />

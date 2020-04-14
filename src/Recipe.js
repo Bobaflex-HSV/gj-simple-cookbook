@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 
+
 export default ({ data, index, onDelete }) => {
   return (
     <div className="recipe-wrapper">
