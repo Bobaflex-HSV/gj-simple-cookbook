@@ -1,32 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, NavLink, useParams  } from "react-router-dom";
 import RecipeTopics from "./RecipeTopics";
+import CategorieList from "./CategorieList";
+import CuisineList from "./CuisineList";
+import Vegan from "./Vegan";
+import RandomRecipe from "./RandomRecipe";
+import Ingredients from "./Ingredients";
+import AddRecipe from "./AddRecipe";
 import "./styles.css";
 
 
-
-
-
-function CATEGORY() {
+function HOME() {
   return (
     <div>
-      <h2>CATEGORY</h2>
-    </div>
-  );
-}
-
-function COUNTRY() {
-  return (
-    <div>
-      <h2>COUNTRY</h2>
-    </div>
-  );
-}
-
-function VEGAN() {
-  return (
-    <div>
-      <h2>VEGAN</h2>
+      <h2>HOME</h2>
     </div>
   );
 }
@@ -41,22 +28,62 @@ export default function Routers() {
               fontWeight: "bold",
               color: "red"
             }}>
+              HOME
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/Category" activeStyle={{
+              fontWeight: "bold",
+              color: "red"
+            }}>
               CATEGORY
             </NavLink>
           </li>
           <li>
-            <NavLink to="/COUNTRY" activeStyle={{
+            <NavLink to="/CuisineList" activeStyle={{
               fontWeight: "bold",
               color: "red"
             }}>
-              COUNTRY
+              CUISINE
             </NavLink>
           </li>
           <li>
-            <NavLink to="/VEGAN/Topic" activeStyle={{
+            <NavLink to="/Vegan" activeStyle={{
+              fontWeight: "bold",
+              color: "red"
+            }}>
+              VEGAN
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/RandomRecipe" activeStyle={{
+              fontWeight: "bold",
+              color: "red"
+            }}>
+              RANDOM RECIPE
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/Ingredients" activeStyle={{
+              fontWeight: "bold",
+              color: "red"
+            }}>
+              INGREDIENTS
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/AddRecipe" activeStyle={{
+              fontWeight: "bold",
+              color: "red"
+            }}>
+              ADD RECIPE
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/NEWTOPIC/TOPIC" activeStyle={{
     fontWeight: "bold",
     color: "red"
-  }}>VEGAN</NavLink>
+  }}>NEWTOPIC</NavLink>
           </li>
         </ul>
 
@@ -64,12 +91,27 @@ export default function Routers() {
         <div>
           <Switch>
             <Route exact path="/">
-              <CATEGORY />
+              <HOME />
             </Route>
-            <Route path="/COUNTRY">
-              <COUNTRY />
+            <Route exact path="/Category">
+              <CategorieList />
             </Route>
-            <Route path="/VEGAN/:Topic">
+            <Route path="/CuisineList">
+              <CuisineList />
+            </Route>
+            <Route path="/Vegan">
+              <Vegan />
+            </Route>
+            <Route path="/RandomRecipe">
+              <RandomRecipe />
+            </Route>
+            <Route path="/Ingredients">
+              <Ingredients />
+            </Route>
+            <Route path="/AddRecipe">
+              <AddRecipe />
+            </Route>
+            <Route path="/NEWTOPIC/:TOPIC">
               <RecipeTopics />
             </Route>
           </Switch>
