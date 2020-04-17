@@ -20,6 +20,7 @@ export default function App() {
     <div className="App">
       <nav>
         NAVIGATION HERE
+        {/* PUT SEARCH BAR HERE */}
         <ul>
           <li>
             <NavLink
