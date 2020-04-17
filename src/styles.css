@@ -1,5 +1,6 @@
 .App {
   font-family: sans-serif;
+  background-color: yellow;
 }
 
 .recipe-wrapper {
@@ -26,7 +27,7 @@
 }
 
 .Routers {
-  background-color: lightgrey;
+  background-color: blue;
   position: absolute;
   top: 0;
   right: 0;

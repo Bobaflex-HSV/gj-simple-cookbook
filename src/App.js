@@ -11,7 +11,6 @@ import RandomRecipe from "./RandomRecipe";
 import Ingredients from "./Ingredients";
 import AddRecipe from "./AddRecipe";
 import "./sidemenu.css";
-import "./styles.css";
 
 function sideMenuHandler() {
   $(".page").toggleClass("shazam");
@@ -27,9 +26,98 @@ export default function App() {
 
   return (
     <div className="App">
+      <span> TOP NAV goes here forever </span>
+      <div className="page">
+        <span className="menu_toggle" onClick={sideMenuHandler}>
+          <i className="menu_open fa fa-bars fa-lg" />
+          <i className="menu_close fa fa-times fa-lg" />
+        </span>
+        <ul className="menu_items">
+          <li>
+            <NavLink
+              to="/"
+              activeStyle={{
+                fontWeight: "bold",
+                color: "black"
+              }}
+            >
+              <i className="icon fa fa-home fa-2x" />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/Category"
+              activeStyle={{
+                fontWeight: "bold",
+                color: "red"
+              }}
+            >
+              <i className="icon fa fa-list-ul fa-2x" /> Category
+            </NavLink>
+          </li>
+          {/*
+          <li>
+            <a href="#">
+              <i className="icon fa fa-globe fa-2x" /> Cuisine
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i className="icon fa fa-list-ul fa-2x" /> Category
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i className="icon fa fa-pagelines fa-2x" /> Only Vegan
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i className="icon fa fa-smile-o fa-2x" /> Surprise me!
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i className="icon fa fa-lemon-o fa-2x" /> Ingredients
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i className="icon fa fa-pencil-square-o fa-2x" /> Add Recipe
+            </a>
+          </li> */}
+        </ul>
+
+        <main className="content" onClick={contentHandler}>
+          <div className="content_inner">
+            <Switch>
+              <Route exact path="/Category">
+                <CategorieList />
+              </Route>
+            </Switch>
+            <h1>Cretan Sfakia Pie</h1>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+              dolorem, ducimus laudantium, earum eos natus sint voluptatum
+              dolores fuga quibusdam consectetur dicta. Laudantium enim
+              inventore iusto ducimus est velit aperiam tempora quibusdam id
+              dolore natus perferendis, debitis distinctio optio repellendus,
+              repellat molestias delectus harum eius, reiciendis dicta ipsum
+              architecto! Eligendi expedita in beatae, placeat unde voluptatibus
+              voluptates consectetur explicabo laudantium, officiis ad nihil.
+              Beatae similique voluptate sequi voluptatem delectus iure in
+              omnis, fuga ipsam nulla ipsum architecto, iste debitis nisi labore
+              quisquam odio accusantium corporis sint perspiciatis. Excepturi
+              earum nobis soluta, doloremque nihil dolorum illum quaerat magnam
+              nemo non sed!
+            </p>
+          </div>
+        </main>
+      </div>
+      {/*
       <nav>
-        NAVIGATION HERE
-        {/* PUT SEARCH BAR HERE */}
+        NAVIGATION HERE / SEARCHBAR?
         <ul>
           <li>
             <NavLink
@@ -133,6 +221,7 @@ export default function App() {
           <AddRecipe />
         </Route>
       </Switch>
+            */}
     </div>
   );
 }
