@@ -5,7 +5,7 @@
 .recipe-wrapper {
   margin: auto;
   margin-top: 20px;
-  width: 50%;
+  width: 80%;
   padding: 10px;
   display: flex;
   justify-content: left;
@@ -25,15 +25,13 @@
   justify-content: left;
 }
 
-.Routers{
-background-color: lightgrey;
-position: absolute;
-top: 0;
-right:0;
+.Routers {
+  background-color: lightgrey;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.Routers ul{
+.Routers ul {
   list-style-type: none;
-
 }
-
