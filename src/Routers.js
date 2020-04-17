@@ -26,7 +26,7 @@ export default function Routers() {
           <li>
             <NavLink to="/" activeStyle={{
               fontWeight: "bold",
-              color: "red"
+              color: "black"
             }}>
               HOME
             </NavLink>

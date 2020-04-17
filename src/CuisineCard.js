@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles.css";
 
-export default () => {
+export default ({country}) => {
   return (
-    <div> THIS IS A CARD THAT WILL DISPLAY A PICTURE AND CUISINE NAME</div>
+    <div>
+      <div>
+      {country}
+      </div>
+    </div>
   );
 };
