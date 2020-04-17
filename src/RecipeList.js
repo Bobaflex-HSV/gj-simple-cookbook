@@ -52,8 +52,6 @@ export default function RecipeList() {
         {recipeExists ? (
           <div>
             <RecipeComponents />
-            <Routers />
-
           </div>
         ) : (
           <div />
