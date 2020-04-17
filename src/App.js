@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link, Switch, Route } from "react-router-dom";
+import $ from "jquery";
 import RecipeList from "./RecipeList";
 import Recipe from "./Recipe";
 import RecipeTopics from "./RecipeTopics";
@@ -9,7 +10,15 @@ import Vegan from "./Vegan";
 import RandomRecipe from "./RandomRecipe";
 import Ingredients from "./Ingredients";
 import AddRecipe from "./AddRecipe";
+import "./sidemenu.css";
 import "./styles.css";
+
+function sideMenuHandler() {
+  $(".page").toggleClass("shazam");
+}
+function contentHandler() {
+  $(".page").removeClass("shazam");
+}
 
 export default function App() {
   const apiURL = "https://www.themealdb.com/api/json/v1/1/random.php";
