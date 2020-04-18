@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "/src/styles.css";
 
 export default ({country}) => {
   return (
