@@ -9,8 +9,8 @@ export default () => {
         <div class="header" />
         <div class="text">
           <h1 class="food">Chinese Noodles</h1>
-          <i class="fa fa-clock-o"> Chinese</i>
-          <i class="fa fa-users"> Vegetables</i>
+          <i class="fa fa-globe"> Chinese</i>
+          <i class="fa fa-lemon-o"> Vegetables</i>
 
           <p class="info">Maybe some text...or maybe not</p>
         </div>
