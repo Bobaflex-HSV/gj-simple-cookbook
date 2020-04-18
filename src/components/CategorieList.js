@@ -3,32 +3,25 @@ import CategoryCard from "./CategoryCard";
 import "/src/styles.css";
 
 export default () => {
-const [data, setData] = useState("");
+  const [data, setData] = useState("");
 
-const fetchData = () => {
-  fetch("https://www.themealdb.com/api/json/v1/1/list.php?c=list")
-  .then(res => res.json())
-  .then(result => setData(result.meals))
-  .catch(error => console.log("error"))
-}
+  const fetchData = () => {
+    fetch("https://www.themealdb.com/api/json/v1/1/list.php?c=list")
+      .then(res => res.json())
+      .then(result => setData(result.meals))
+      .catch(error => console.log("error"));
+  };
 
-
-useEffect(() => {
-  fetchData()
-}, [])
-
-
-const loopedComponents =data && data.map((element, index)=>(
-  <CategoryCard
-    key={index}
-    category = {element.strCategory}
-  />
-))
-
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
-      <div>     
-        <CategoryCard category = {loopedComponents} />
-      </div>
+    <div>
+      {data &&
+        data.map((element, index) => (
+          <CategoryCard key={index} category={element.strCategory} />
+        ))}
+    </div>
   );
 };

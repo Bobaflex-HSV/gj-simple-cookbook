@@ -5,10 +5,9 @@ import "/src/styles.css";
 export default ({ category }) => {
   return (
     <div>
-      <div>{category}</div>
       <div class="card">
         <div class="header" />
-        <a href="#" className="btn">
+        <a href="#" class="btn">
           {category}
         </a>
       </div>
