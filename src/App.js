@@ -10,14 +10,20 @@ import Vegan from "./components/Vegan";
 import RandomRecipe from "./components/RandomRecipe";
 import Ingredients from "./components/Ingredients";
 import AddRecipe from "./components/AddRecipe";
-import "./sidemenu.css";
+{
+  /*import "./sidemenu.css"; */
+}
+import "./topmenu.css";
 import "./styles.css";
-
+{
+  /*
 function sideMenuHandler() {
   $(".page").toggleClass("shazam");
 }
 function contentHandler() {
   $(".page").removeClass("shazam");
+}
+*/
 }
 
 export default function App() {
@@ -28,8 +34,101 @@ export default function App() {
   return (
     <div className="App">
       <nav>
+        <div className="menu">
+          <div className="label">SERVE ME</div>
+          <div className="spacer" />
+          <div className="item">
+            <NavLink
+              to="/Category"
+              activeStyle={{
+                fontWeight: "bold",
+                color: "red"
+              }}
+            >
+              CATEGORY
+            </NavLink>
+          </div>
+          <div className="item">
+            <NavLink
+              to="/CuisineList"
+              activeStyle={{
+                fontWeight: "bold",
+                color: "red"
+              }}
+            >
+              CUISINE
+            </NavLink>
+          </div>
+          <div class="item">
+            <NavLink
+              to="/Vegan"
+              activeStyle={{
+                fontWeight: "bold",
+                color: "red"
+              }}
+            >
+              VEGAN
+            </NavLink>
+          </div>
+          <div class="item">
+            <NavLink
+              to="/RandomRecipe"
+              activeStyle={{
+                fontWeight: "bold",
+                color: "red"
+              }}
+            >
+              SURPRISE ME
+            </NavLink>
+          </div>
+          <div class="item">
+            <NavLink
+              to="/Ingredients"
+              activeStyle={{
+                fontWeight: "bold",
+                color: "red"
+              }}
+            >
+              INGREDIENTS
+            </NavLink>
+          </div>
+          <div class="item">
+            <NavLink
+              to="/AddRecipe"
+              activeStyle={{
+                fontWeight: "bold",
+                color: "red"
+              }}
+            >
+              ADD RECIPE
+            </NavLink>
+          </div>
+        </div>
+        <label>
+          <div className="input-group mb-3 cb-search">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Search for recipes..."
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <div className="input-group-append">
+              <button
+                className="btn btn-outline-secondary"
+                type="button"
+                id="button-addon2"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </label>
+      </nav>
+      {/*
+      <nav>
         NAVIGATION HERE
-        {/* PUT SEARCH BAR HERE */}
+    
         <ul>
           <li>
             <NavLink
@@ -109,7 +208,7 @@ export default function App() {
             </NavLink>
           </li>
         </ul>
-      </nav>
+            </nav> */}
       <Switch>
         <Route exact path="/">
           <RecipeList />
