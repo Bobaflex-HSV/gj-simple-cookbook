@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./styles.css";
+import "/src/styles.css";
 import CuisineCard from "./CuisineCard";
 
 export default () => {

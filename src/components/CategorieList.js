@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CategoryCard from "./CategoryCard";
-import "./styles.css";
-
+import "/src/styles.css";
 export default () => {
 const [data, setData] = useState("");
 

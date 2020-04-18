@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import { NavLink, Link, Switch, Route } from "react-router-dom";
 import RecipeList from "./RecipeList";
 import Recipe from "./Recipe";
-import RecipeTopics from "./RecipeTopics";
-import CategorieList from "./CategorieList";
-import CuisineList from "./CuisineList";
-import Vegan from "./Vegan";
-import RandomRecipe from "./RandomRecipe";
-import Ingredients from "./Ingredients";
-import AddRecipe from "./AddRecipe";
+import RecipeTopics from "./components/RecipeTopics";
+import CategorieList from "./components/CategorieList";
+import CuisineList from "./components/CuisineList";
+import Vegan from "./components/Vegan";
+import RandomRecipe from "./components/RandomRecipe";
+import Ingredients from "./components/Ingredients";
+import AddRecipe from "./components/AddRecipe";
 import "./styles.css";
 
 export default function App() {
@@ -21,6 +21,8 @@ export default function App() {
       <nav>
         NAVIGATION HERE
         {/* PUT SEARCH BAR HERE */}
+        {/* PUT SEARCH BAR HERE */}
+
         <ul>
           <li>
             <NavLink

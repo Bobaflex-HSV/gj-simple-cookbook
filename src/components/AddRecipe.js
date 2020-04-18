@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles.css";
+import "/src/styles.css";
 
 export default () => {
   return <div> PLACEHOLDER FOR ADDING RECIPES </div>;
