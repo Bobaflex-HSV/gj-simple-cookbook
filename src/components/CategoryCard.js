@@ -7,7 +7,7 @@ export default ({ category, imageURL, catDescription }) => {
     <div>
       {/* <img src={imageURL} alt={catDescription} /> */}
 
-      <div className="card">
+      <div className="cc-card">
         <div
           className="header"
           style={{

@@ -32,12 +32,14 @@ body {
   height: 100%;
 }
 
-.card {
+.cc-card {
   position: relative;
   background: $white;
   max-width: 350px;
   margin: 20px auto;
   box-shadow: 10px 10px 10px 2px grey;
+  border: 1px solid gray;
+  border-radius: 5px;
   .header {
     // background: $food;
     background-size: cover;
