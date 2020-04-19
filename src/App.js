@@ -40,12 +40,17 @@ export default function App() {
                 color: "red"
               }}
             >
-              <i className="icon fa fa-home fa-2x"> HOME</i>
+              <i className="icon fa fa-home fa-2x">
+                {" "}
+                <span className="menu-text">HOME</span>
+              </i>
             </NavLink>
           </div>
           <div className="spacer" />
           <div className="label">
-            <i className="icon fa fa-arrow-circle-o-right fa-2x"> Serve me</i>
+            <i className="icon fa fa-arrow-circle-o-right fa-2x">
+              <span className="menu-text"> Serve me</span>
+            </i>
           </div>
           <div className="spacer" />
           <div className="item">
