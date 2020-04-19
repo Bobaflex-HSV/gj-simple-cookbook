@@ -41,12 +41,10 @@ export default function App() {
               }}
             >
               <i className="icon fa fa-home fa-2x">
-                {" "}
                 <span className="menu-text">HOME</span>
               </i>
             </NavLink>
           </div>
-          <div className="spacer" />
           <div className="label">
             <i className="icon fa fa-arrow-circle-o-right fa-2x">
               <span className="menu-text"> Serve me</span>
@@ -75,7 +73,9 @@ export default function App() {
                 color: "red"
               }}
             >
-              <i className="icon fa fa-globe fa-2x"> CUISINE</i>
+              <i className="icon fa fa-globe fa-2x">
+                <span className="menu-text"> CUISINE</span>
+              </i>
             </NavLink>
           </div>
           <div className="item">
@@ -86,7 +86,9 @@ export default function App() {
                 color: "red"
               }}
             >
-              <i className="icon fa fa-pagelines fa-2x"> VEGAN</i>
+              <i className="icon fa fa-pagelines fa-2x">
+                <span className="menu-text"> VEGAN</span>
+              </i>
             </NavLink>
           </div>
           <div className="item">
@@ -97,7 +99,9 @@ export default function App() {
                 color: "red"
               }}
             >
-              <i className="icon fa fa-smile-o fa-2x"> SURPRISE ME</i>
+              <i className="icon fa fa-smile-o fa-2x">
+                <span className="menu-text"> SURPRISE ME</span>
+              </i>
             </NavLink>
           </div>
           <div className="item">
@@ -108,7 +112,9 @@ export default function App() {
                 color: "red"
               }}
             >
-              <i className="icon fa fa-lemon-o fa-2x"> INGREDIENTS</i>
+              <i className="icon fa fa-lemon-o fa-2x">
+                <span className="menu-text"> INGREDIENTS</span>
+              </i>
             </NavLink>
           </div>
           <div className="item">
@@ -119,7 +125,9 @@ export default function App() {
                 color: "red"
               }}
             >
-              <i className="icon fa fa-pencil-square-o fa-2x"> ADD RECIPE</i>
+              <i className="icon fa fa-pencil-square-o fa-2x">
+                <span className="menu-text"> ADD RECIPE</span>
+              </i>
             </NavLink>
           </div>
         </div>
