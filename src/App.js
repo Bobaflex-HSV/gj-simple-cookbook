@@ -43,11 +43,13 @@ export default function App() {
                 color: "red"
               }}
             >
-              HOME
+              <i className="icon fa fa-home fa-2x"> HOME</i>
             </NavLink>
           </div>
           <div className="spacer" />
-          <div className="label">SERVE ME</div>
+          <div className="label">
+            <i className="icon fa fa-arrow-circle-o-right fa-2x"> Serve me</i>
+          </div>
           <div className="spacer" />
           <div className="item">
             <NavLink
@@ -57,7 +59,7 @@ export default function App() {
                 color: "red"
               }}
             >
-              CATEGORY
+              <i className="icon fa fa-list-ul fa-2x"> CATEGORY</i>
             </NavLink>
           </div>
           <div className="item">
@@ -68,7 +70,7 @@ export default function App() {
                 color: "red"
               }}
             >
-              CUISINE
+              <i className="icon fa fa-globe fa-2x"> CUISINE</i>
             </NavLink>
           </div>
           <div className="item">
@@ -79,7 +81,7 @@ export default function App() {
                 color: "red"
               }}
             >
-              VEGAN
+              <i className="icon fa fa-pagelines fa-2x"> VEGAN</i>
             </NavLink>
           </div>
           <div className="item">
@@ -90,7 +92,7 @@ export default function App() {
                 color: "red"
               }}
             >
-              SURPRISE ME
+              <i className="icon fa fa-smile-o fa-2x"> SURPRISE ME</i>
             </NavLink>
           </div>
           <div className="item">
@@ -101,7 +103,7 @@ export default function App() {
                 color: "red"
               }}
             >
-              INGREDIENTS
+              <i className="icon fa fa-lemon-o fa-2x"> INGREDIENTS</i>
             </NavLink>
           </div>
           <div className="item">
@@ -112,7 +114,7 @@ export default function App() {
                 color: "red"
               }}
             >
-              ADD RECIPE
+              <i className="icon fa fa-pencil-square-o fa-2x"> ADD RECIPE</i>
             </NavLink>
           </div>
         </div>
