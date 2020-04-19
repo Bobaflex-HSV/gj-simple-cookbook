@@ -28,7 +28,7 @@ img {
 }
 
 html,
-body {
+body { 
   height: 100%;
   color: grey;
 }
@@ -71,6 +71,7 @@ body {
     }
     .fa-lemon-o {
       color: $gray;
+      margin: 0 30px;
     }
   }
   
