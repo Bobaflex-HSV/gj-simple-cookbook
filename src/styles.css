@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
 .App {
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .recipe-wrapper {

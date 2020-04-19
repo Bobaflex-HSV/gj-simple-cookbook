@@ -10,13 +10,11 @@ import Vegan from "./components/Vegan";
 import RandomRecipe from "./components/RandomRecipe";
 import Ingredients from "./components/Ingredients";
 import AddRecipe from "./components/AddRecipe";
-{
-  /*import "./sidemenu.css"; */
-}
 import "./topmenu.css";
 import "./styles.css";
 {
-  /*
+  /*import "./sidemenu.css"; 
+
 function sideMenuHandler() {
   $(".page").toggleClass("shazam");
 }
@@ -39,7 +37,6 @@ export default function App() {
             <NavLink
               to="/"
               activeStyle={{
-                fontWeight: "bold",
                 color: "red"
               }}
             >
