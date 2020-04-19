@@ -20,6 +20,10 @@ body {
   bottom: 20px;
   left: 20px;
 }
+.menu-text {
+  color: rgba(31, 69, 139, 0.8);
+  font-size: 0.7em;
+}
 .menu:hover {
   pointer-events: all;
 }

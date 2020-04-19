@@ -61,7 +61,10 @@ export default function App() {
                 color: "red"
               }}
             >
-              <i className="icon fa fa-list-ul fa-2x"> CATEGORY</i>
+              <i className="icon fa fa-list-ul fa-2x">
+                {" "}
+                <span className="menu-text"> CATEGORY</span>
+              </i>
             </NavLink>
           </div>
           <div className="item">
