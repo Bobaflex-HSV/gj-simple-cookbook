@@ -5,7 +5,7 @@ import "/src/styles.css";
 export default () => {
   return (
     <div>
-      <div className="card">
+      <div className="rcs-card">
         <div className="header" />
         <div className="text">
           <h1 className="food">Chinese Noodles</h1>
