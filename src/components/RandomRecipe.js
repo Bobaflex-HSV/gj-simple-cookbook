@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CategoryCard from "./CategoryCard";
+import RandomRecipeCard from "./RandomRecipeCard";
 import "/src/styles.css";
 
 export default () => {
@@ -12,22 +12,28 @@ export default () => {
       .catch(error => console.log("error"));
   };
 
+
   useEffect(() => {
     fetchData();
-    setInterval(fetchData, 2000);
-  }, []);
+    setInterval(
+      fetchData, 4000); 
+     }, []);
 
   return (
     <div>
+      <div>
+    </div>
       {data &&
         data.map((element, index) => (
-          <CategoryCard
+          <RandomRecipeCard
             key={index}
             imageURL={element.strCategoryThumb}
             category={element.strMeal}
             name={element.strCategory}
+            myOnclick = {fetchData}
           />
         ))}
     </div>
+
   );
 };
