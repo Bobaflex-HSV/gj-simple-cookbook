@@ -6,9 +6,9 @@ export default () => {
   const [data, setData] = useState("");
 
   const fetchData = () => {
-    fetch("https://www.themealdb.com/api/json/v1/1/list.php?c=list")
+    fetch("https://www.themealdb.com/api/json/v1/1/categories.php")
       .then(res => res.json())
-      .then(result => setData(result.meals))
+      .then(result => setData(result.categories))
       .catch(error => console.log("error"));
   };
 
@@ -20,7 +20,12 @@ export default () => {
     <div>
       {data &&
         data.map((element, index) => (
-          <CategoryCard key={index} category={element.strCategory} />
+          <CategoryCard
+            key={index}
+            category={element.strCategory}
+            imageURL={element.strCategoryThumb}
+            catDescription={element.strCategoryDescription}
+          />
         ))}
     </div>
   );
