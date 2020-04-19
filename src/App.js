@@ -35,6 +35,18 @@ export default function App() {
     <div className="App">
       <nav>
         <div className="menu">
+          <div className="label">
+            <NavLink
+              to="/"
+              activeStyle={{
+                fontWeight: "bold",
+                color: "red"
+              }}
+            >
+              HOME
+            </NavLink>
+          </div>
+          <div className="spacer" />
           <div className="label">SERVE ME</div>
           <div className="spacer" />
           <div className="item">
@@ -125,90 +137,6 @@ export default function App() {
           </div>
         </label>
       </nav>
-      {/*
-      <nav>
-        NAVIGATION HERE
-    
-        <ul>
-          <li>
-            <NavLink
-              to="/"
-              activeStyle={{
-                fontWeight: "bold",
-                color: "black"
-              }}
-            >
-              HOME
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/Category"
-              activeStyle={{
-                fontWeight: "bold",
-                color: "red"
-              }}
-            >
-              CATEGORY
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/CuisineList"
-              activeStyle={{
-                fontWeight: "bold",
-                color: "red"
-              }}
-            >
-              CUISINE
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/Vegan"
-              activeStyle={{
-                fontWeight: "bold",
-                color: "red"
-              }}
-            >
-              VEGAN
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/RandomRecipe"
-              activeStyle={{
-                fontWeight: "bold",
-                color: "red"
-              }}
-            >
-              RANDOM RECIPE
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/Ingredients"
-              activeStyle={{
-                fontWeight: "bold",
-                color: "red"
-              }}
-            >
-              INGREDIENTS
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/AddRecipe"
-              activeStyle={{
-                fontWeight: "bold",
-                color: "red"
-              }}
-            >
-              ADD RECIPE
-            </NavLink>
-          </li>
-        </ul>
-            </nav> */}
       <Switch>
         <Route exact path="/">
           <RecipeList />
