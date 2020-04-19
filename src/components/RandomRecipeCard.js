@@ -2,7 +2,7 @@ import React from "react";
 import "../categorycard.scss";
 import "/src/styles.css";
 
-export default ({ category, imageURL, catDescription }) => {
+export default ({ category, myOnclick, imageURL, catDescription }) => {
   return (
     <div>
       {/* <img src={imageURL} alt={catDescription} /> */}
@@ -19,8 +19,11 @@ export default ({ category, imageURL, catDescription }) => {
           <p className="info">{catDescription}</p>
         </div>
         <a href="#" className="btn">
-          Cook {category}
+           {category}
         </a>
+<div>
+        <button className = "btn btn-primary" type="reset" onClick = {myOnclick}>REFETCH</button>
+</div>
       </div>
     </div>
   );
