@@ -7,10 +7,8 @@ import "/src/styles.css";
 export default () => {
   return (
     <div>
-      PLACEHOLDER FOR ADDING RECIPES
+      <h2>Add your recipe here...</h2>
       <Placeholder />
-      <RecipeCard />
-      <RecipeCardSmall />
     </div>
   );
 };
