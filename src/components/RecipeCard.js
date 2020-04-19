@@ -5,16 +5,16 @@ import "/src/styles.css";
 export default () => {
   return (
     <div>
-      <div class="card">
-        <div class="header" />
-        <div class="text">
-          <h1 class="food">Chinese Noodles</h1>
-          <i class="fa fa-globe"> Chinese</i>
-          <i class="fa fa-lemon-o"> Vegetables</i>
+      <div className="card">
+        <div className="header" />
+        <div className="text">
+          <h1 className="food">Chinese Noodles</h1>
+          <i className="fa fa-globe"> Chinese</i>
+          <i className="fa fa-lemon-o"> Vegetables</i>
 
-          <p class="info">Maybe some text...or maybe not</p>
+          <p className="info">Maybe some text...or maybe not</p>
         </div>
-        <a href="#" class="btn">
+        <a href="#" className="btn">
           Let's Cook!
         </a>
       </div>

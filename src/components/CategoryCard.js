@@ -7,18 +7,18 @@ export default ({ category, imageURL, catDescription }) => {
     <div>
       {/* <img src={imageURL} alt={catDescription} /> */}
 
-      <div class="card">
+      <div className="card">
         <div
-          class="header"
+          className="header"
           style={{
             backgroundImage: `url(${imageURL})`
           }}
         />
-        <div class="text">
-          <h1 class="food">{category}</h1>
+        <div className="text">
+          <h1 className="food">{category}</h1>
           <p className="info">{catDescription}</p>
         </div>
-        <a href="#" class="btn">
+        <a href="#" className="btn">
           Cook {category}
         </a>
       </div>

@@ -59,7 +59,7 @@ export default function App() {
               CUISINE
             </NavLink>
           </div>
-          <div class="item">
+          <div className="item">
             <NavLink
               to="/Vegan"
               activeStyle={{
@@ -70,7 +70,7 @@ export default function App() {
               VEGAN
             </NavLink>
           </div>
-          <div class="item">
+          <div className="item">
             <NavLink
               to="/RandomRecipe"
               activeStyle={{
@@ -81,7 +81,7 @@ export default function App() {
               SURPRISE ME
             </NavLink>
           </div>
-          <div class="item">
+          <div className="item">
             <NavLink
               to="/Ingredients"
               activeStyle={{
@@ -92,7 +92,7 @@ export default function App() {
               INGREDIENTS
             </NavLink>
           </div>
-          <div class="item">
+          <div className="item">
             <NavLink
               to="/AddRecipe"
               activeStyle={{
