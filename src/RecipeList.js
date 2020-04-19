@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Recipe from "./Recipe";
 import "./styles.css";
 
@@ -21,6 +21,9 @@ export default function RecipeList() {
       myRecipes.filter((element, filterIndex) => index !== filterIndex)
     );
   }
+  useEffect(() => {
+    fetchRecipes();
+  }, []);
 
   function RecipeComponents() {
     let temp;
