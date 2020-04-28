@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles.css";
 
 
-export default ({ data, index, onDelete }) => {
+export default ({ strMeal, index, strMeasure7, strIngredient4, strIngredient7, strIngredient6,  strMeasure6, strIngredient5, strMeasure4, strMeasure5, strMeasure2, strIngredient3, strMeasure3, strIngredient2, strInstructions, strMeasure1, strIngredient1, strArea, strCategory, strMealThumb, onDelete }) => {
   return (
     <div className="recipe-wrapper">
       <div className="card" style={{ width: 50 + "rem" }}>
         <div className="card-body">
           <h2 className="card-title">
-            <span className="badge badge-primary cb-badge">{data.strMeal}</span>
+            <span className="badge badge-primary cb-badge">{strMeal}</span>
           </h2>
         </div>
 
         <img
-          src={data.strMealThumb}
+          src={strMealThumb}
           className="card-img-top recipe-image img-thumbnail"
           alt="..."
         />
@@ -22,23 +22,23 @@ export default ({ data, index, onDelete }) => {
             <span className="badge badge-primary cb-badge">
               Category:
               <span className="badge badge-light cb-nested-badge">
-                {data.strCategory}
+                {strCategory}
               </span>
             </span>
             <span className="badge badge-primary cb-badge">
               Cuisine:
               <span className="badge badge-light cb-nested-badge">
-                {data.strArea}
+                {strArea}
               </span>
             </span>
           </h4>
           <div className="cb-container">
-            <p>
+            <div>
               <h3>
                 <span className="badge badge-dark cb-badge">Instructions</span>
               </h3>
-              {data.strInstructions}
-            </p>
+              {strInstructions}
+            </div>
           </div>
           <div className="cb-container">
             <h3>
@@ -54,37 +54,37 @@ export default ({ data, index, onDelete }) => {
               </thead>
               <tbody>
                 <tr>
-                  <td>{data.strMeasure1}</td>
-                  <td>{data.strIngredient1}</td>
+                  <td>{strMeasure1}</td>
+                  <td>{strIngredient1}</td>
                 </tr>
                 <tr>
-                  <td>{data.strMeasure2}</td>
-                  <td>{data.strIngredient2}</td>
+                  <td>{strMeasure2}</td>
+                  <td>{strIngredient2}</td>
                 </tr>
                 <tr>
-                  <td>{data.strMeasure3}</td>
-                  <td>{data.strIngredient3}</td>
+                  <td>{strMeasure3}</td>
+                  <td>{strIngredient3}</td>
                 </tr>
                 <tr>
-                  <td>{data.strMeasure4}</td>
-                  <td>{data.strIngredient4}</td>
+                  <td>{strMeasure4}</td>
+                  <td>{strIngredient4}</td>
                 </tr>
-                {data.strMeasure5 !== "" && (
+                {strMeasure5 !== "" && (
                   <tr>
-                    <td>{data.strMeasure5}</td>
-                    <td>{data.strIngredient5}</td>
+                    <td>{strMeasure5}</td>
+                    <td>{strIngredient5}</td>
                   </tr>
                 )}
-                {data.strMeasure6 !== "" && (
+                {strMeasure6 !== "" && (
                   <tr>
-                    <td>{data.strMeasure6}</td>
-                    <td>{data.strIngredient6}</td>
+                    <td>{strMeasure6}</td>
+                    <td>{strIngredient6}</td>
                   </tr>
                 )}
-                {data.strMeasure7 !== "" && (
+                {strMeasure7 !== "" && (
                   <tr>
-                    <td>{data.strMeasure7}</td>
-                    <td>{data.strIngredient7}</td>
+                    <td>{strMeasure7}</td>
+                    <td>{strIngredient7}</td>
                   </tr>
                 )}
               </tbody>
