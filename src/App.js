@@ -131,26 +131,6 @@ export default function App() {
             </NavLink>
           </div>
         </div>
-        <label>
-          <div className="input-group mb-3 cb-search">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Search for recipes..."
-              aria-label="Recipient's username"
-              aria-describedby="button-addon2"
-            />
-            <div className="input-group-append">
-              <button
-                className="btn btn-outline-secondary"
-                type="button"
-                id="button-addon2"
-              >
-                Search
-              </button>
-            </div>
-          </div>
-        </label>
       </nav>
       <Switch>
         <Route exact path="/">
